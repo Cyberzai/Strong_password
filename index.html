@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Strength Checker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Password Strength Checker</h1>
+        <input type="password" id="password" placeholder="Enter your password" oninput="checkPasswordStrength()">
+        <p id="lengthCounter">Length: 0</p>
+        <div id="feedback">
+            <p id="length" class="criteria">Length: <span class="status">❌</span></p>
+            <p id="uppercase" class="criteria">Uppercase: <span class="status">❌</span></p>
+            <p id="lowercase" class="criteria">Lowercase: <span class="status">❌</span></p>
+            <p id="numbers" class="criteria">Numbers: <span class="status">❌</span></p>
+            <p id="special" class="criteria">Special Characters: <span class="status">❌</span></p>
+        </div>
+        <div id="strengthBarContainer">
+            <div id="strengthBar"></div>
+        </div>
+        <div id="congratsMessage" class="hidden">
+            <h2>Congratulations!</h2>
+            <p>You've created a strong password!</p>
+            <p>your flag is: flag{P@ssw0rd2024!}</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

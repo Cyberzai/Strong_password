@@ -1,0 +1,75 @@
+body {
+    font-family: 'Press Start 2P', cursive;
+    background-color: #000;
+    color: #00ff00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #111;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+    text-align: center;
+    width: 80%;
+    max-width: 500px;
+}
+
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #00ff00;
+    border-radius: 5px;
+    background-color: #000;
+    color: #00ff00;
+    font-family: 'Press Start 2P', cursive;
+    outline: none;
+}
+
+#lengthCounter {
+    margin: 0;
+    text-align: left;
+}
+
+.criteria {
+    text-align: left;
+    font-size: 14px;
+}
+
+.status {
+    float: right;
+}
+
+#strengthBarContainer {
+    width: 100%;
+    height: 10px;
+    background-color: #333;
+    border-radius: 5px;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+#strengthBar {
+    height: 100%;
+    width: 0;
+    background-color: red;
+    transition: width 0.3s, background-color 0.3s;
+}
+
+.hidden {
+    display: none;
+}
+
+#congratsMessage {
+    margin-top: 20px;
+    padding: 10px;
+    border: 2px solid #00ff00;
+    border-radius: 10px;
+    background-color: #111;
+    color: #00ff00;
+}
